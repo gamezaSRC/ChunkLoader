@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@minecraft/server": "^2.0.0-beta.1.21.70-stable",
+    "@minecraft/server-net": "^1.0.0-beta.1.21.2-stable",
+    "@minecraft/server-ui": "^2.0.0-beta.1.21.70-stable",
+    "crypto-es": "^2.1.0"
+  }
+}

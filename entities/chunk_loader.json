@@ -1,0 +1,47 @@
+{
+    "format_version": "1.20.70",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "src:chunk_loader",
+        "is_summonable": true,
+        "is_spawnable": false
+      },
+      "components": {
+        "minecraft:type_family": {
+          "family": [
+            "worker",
+            "chunk",
+            "inanimate"
+          ]
+        },
+        "minecraft:persistent": {},
+        "minecraft:conditional_bandwidth_optimization": {},
+        "minecraft:nameable": {
+          "always_show": true,
+          "allow_name_tag_renaming": false
+        },
+        "minecraft:pushable": {
+          "is_pushable": false
+        },
+        "minecraft:physics": {
+          "has_collision": false,
+          "has_gravity": false,
+          "push_towards_closest_space": false
+        },
+        "minecraft:collision_box": {
+          "height": 0,
+          "width": 0
+        },
+        "minecraft:tick_world": {
+          "never_despawn": true,
+          "radius": 2
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        }
+      }
+    }
+  }
