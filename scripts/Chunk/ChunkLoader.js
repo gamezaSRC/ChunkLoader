@@ -13,14 +13,14 @@ import { EManager } from "./EManager";
 import { Chunk } from "./Chunk";
 import { IChunkManager } from "./Interfaces/IChunkManager";
 import { system } from "@minecraft/server";
-import { overworld } from "../../../engine/core";
 
+const OVERWORLD = world.getDimension('overworld')
 const LOADED_CHUNKS = new Map();
 class ChunkLoader extends IChunkManager {
     #baseChunk;
     #entityManager;
     #dimension;
-    constructor({ x, z, baseDimension = overworld, dimension }) {
+    constructor({ x, z, baseDimension = OVERWORLD, dimension }) {
         super();
         this.#baseChunk = new Chunk({ x: x, z: z });
         this.#entityManager = new EManager(baseDimension);
